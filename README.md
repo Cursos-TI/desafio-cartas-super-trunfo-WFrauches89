@@ -27,6 +27,9 @@ O sistema permite ao usuário cadastrar as cartas de cidades com as seguintes in
 - **Área em km² (float)**
 - **PIB (float)**
 - **Número de Pontos Turísticos (int)**
+- **Densidade populacional (float):** calculada como população dividida pela área da cidade.
+- **PIB per capita (float):** calculado como PIB total da cidade dividido pela população.
+- **Super Poder (float):** soma de todas as propriedades, ajustada conforme a lógica do super poder.
 
 ### Exemplo de Dados Cadastrados
 
@@ -72,3 +75,14 @@ O sistema permitirá ao usuário cadastrar as cartas do jogo, fornecendo informa
 - Para cada carta, o usuário deverá inserir os dados que foram utilizados no nível básico. Com base nesses dados, o sistema calculará automaticamente:
   - **Densidade populacional (float):** Calculada como população dividida pela área da cidade. Isso dá uma medida de quantas pessoas vivem por quilômetro quadrado.
   - **PIB per capita (float):** Calculado como PIB total da cidade dividido pela população. Isso dá uma medida da média de produção econômica por pessoa.
+
+## Comparação das cartas
+
+A parte da comparação acontecerá da seguinte maneira:
+
+- O sistema permitirá ao usuário comparar duas cartas, exibindo todas as propriedades de cada uma.
+- O sistema utilizará operadores relacionais para determinar a carta vencedora com base nas propriedades selecionadas.
+- A propriedade de densidade populacional será considerada vencedora quando tiver o menor valor, enquanto as outras propriedades vencerão quando tiverem o maior valor.
+- Cada carta terá um super poder que é a soma de todas as propriedades (população, área, PIB, PIB per capta e densidade populacional invertida para comparação e número de pontos turísticos).
+- A saída da comparação será 1 ou 0, caso a relação seja verdadeira ou falsa. Se o resultado da comparação for 1, a carta 1 ganhou; se o resultado for 0, a carta 2 ganhou.
+- O sistema deve imprimir o resultado das comparações para cada propriedade.
