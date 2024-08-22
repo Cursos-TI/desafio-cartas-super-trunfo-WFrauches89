@@ -8,9 +8,9 @@ int main()
     char nomeDaCidade[80];
     int populacao;
     float areaKmSquare;
-    double pib;
+    float pib; // retornei para float pois havia deixado em double quando estava testando o cod.
     int numeroPontosTuristicos;
-
+ 
 
     //Interação com usuário
     printf("Digite o Estado de A - H:\n");
@@ -35,6 +35,12 @@ int main()
     printf("Quantos pontos turísticos tem na cidade?\n");
     scanf(" %d", &numeroPontosTuristicos);
 
+    //Aventureiro   Densidade populacional (float) - população dividida pela área da cidade. PIB per capita (float) -  PIB total da cidade dividido pela população
+    float densidade = populacao/areaKmSquare;
+    float pibPerCapita = pib/populacao;
+
+
+
     printf("Estado: %c\n", estado);
     printf("Código da Carta: %c%s\n", estado, codigoDaCarta);
     printf("Nome da Cidade: %s\n", nomeDaCidade);
@@ -42,6 +48,8 @@ int main()
     printf("Área: %.2f Km²\n", areaKmSquare);
     printf("PIB: %.2f bilhões de reais\n", pib);
     printf("Número de Pontos Turísticos: %d\n", numeroPontosTuristicos);
+    printf("Densidade populacional: %.2f\n", densidade);
+    printf("PIB per capita: %.2f\n", pibPerCapita);
 
     return 0;
 }
