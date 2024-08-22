@@ -1,5 +1,5 @@
 ﻿# Desafio-cartas-super-trunfo-WFrauches89
-
+## Novato
 O **Super Trunfo** é um jogo onde os jogadores comparam as propriedades de suas cartas para determinar quem tem a mais forte. Cada carta representa uma cidade de um país dividido em estados.
 
 ## Estrutura das Cartas
@@ -57,3 +57,18 @@ Após o cadastro de uma cidade, o sistema exibirá os dados da seguinte forma:
 ## Código Fonte
 
 O código fonte do sistema está disponível no arquivo `.c`. Para informações detalhadas sobre o código, veja o arquivo `Super_trunfo.c`.
+
+## Aventureiro
+
+**O objetivo é continuar o desenvolvimento** do jogo Super Trunfo com o tema países. Agora, você **implementará a lógica para calcular e adicionar propriedades calculadas às cartas de cidades, incluindo densidade populacional e PIB per capita**. Isso permitirá uma análise mais detalhada e comparativa das cidades.
+
+## Funcionalidades do sistema
+
+O sistema permitirá ao usuário cadastrar cartas de cidades para o jogo Super Trunfo, fornecendo informações detalhadas como estado, código da carta, nome da cidade, população, área, PIB e número de pontos turísticos. Com base nesses dados, o sistema calculará automaticamente a densidade populacional e o PIB per capita. As entradas serão feitas via terminal de comando e, após o cadastro, os dados serão exibidos de forma clara e organizada.
+
+O sistema permitirá ao usuário cadastrar as cartas do jogo, fornecendo informações detalhadas sobre cada cidade representada, de acordo com as seguintes orientações:
+
+- Cada carta será identificada pela letra do estado seguida de um número de 01 a 04 (por exemplo, A01, A02, B01, B02).
+- Para cada carta, o usuário deverá inserir os dados que foram utilizados no nível básico. Com base nesses dados, o sistema calculará automaticamente:
+  - **Densidade populacional (float):** Calculada como população dividida pela área da cidade. Isso dá uma medida de quantas pessoas vivem por quilômetro quadrado.
+  - **PIB per capita (float):** Calculado como PIB total da cidade dividido pela população. Isso dá uma medida da média de produção econômica por pessoa.
