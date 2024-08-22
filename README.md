@@ -1,4 +1,4 @@
-﻿# desafio-cartas-super-trunfo-WFrauches89
+﻿# Desafio-cartas-super-trunfo-WFrauches89
 
 O **Super Trunfo** é um jogo onde os jogadores comparam as propriedades de suas cartas para determinar quem tem a mais forte. Cada carta representa uma cidade de um país dividido em estados.
 
